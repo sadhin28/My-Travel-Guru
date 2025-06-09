@@ -30,10 +30,10 @@ const NavBar = () => {
         },
     ]
     return (
-        <div className='flex items-center py-4 gap-3 justify-between'>
-            <img className='w-20' src={logo} alt="" />
+        <div className='grid items-center justify-items-center md:grid-cols-3 space-y-3 py-2'>
+            <img className=' md:w-20 w-15 ' src={logo} alt="" />
             <form>
-                <label className="input">
+                <label className="input h-10">
                     <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <g
                             strokeLinejoin="round"
@@ -51,8 +51,8 @@ const NavBar = () => {
                 </label>
                 
             </form>
-            <ul>
-                <li className='space-x-2 md:space-x-5 md:text-xl text-xs'>
+            <ul >
+                <li className='space-x-2 text-white md:text-black md:space-x-5 '>
                     {
                         links.map(link => <NavLink to={link.link} >{link.name}</NavLink>)
                     }

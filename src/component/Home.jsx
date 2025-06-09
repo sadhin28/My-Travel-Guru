@@ -1,9 +1,8 @@
 import NavBar from "./NavBar";
-
 const Home = () => {
     return (
-        <div>
-           <header className="w-11/12 mx-auto">
+        <div className="home opacity-95 h-screen bg-center   bg-cover">
+           <header className=" px-30 md:backdrop-blur-xl">
               <NavBar></NavBar>
            </header>
         </div>
