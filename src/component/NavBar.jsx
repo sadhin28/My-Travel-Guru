@@ -31,12 +31,8 @@ const NavBar = () => {
         },
     ]
     return (
-        <header
-      className="relative header opacity-67 bg-black h-screen bg-cover bg-center text-white bg-opacity-0"
-      
-    >
-      {/* Navbar */}
-      <nav className="flex items-center justify-between px-6 py-4 bg-black bg-opacity-40">
+        <div>
+            <nav className="flex text-white items-center justify-between px-6 py-4 bg-black bg-opacity-40">
         {/* Logo */}
         <div className="text-2xl font-bold flex items-center gap-2">
           🧳 <span>Travel Guru</span>
@@ -79,7 +75,12 @@ const NavBar = () => {
         
         </div>
       )}
-
+          <header
+      className="relative header opacity-67 bg-black h-screen bg-cover bg-center text-white bg-opacity-0"
+      
+    >
+      {/* Navbar */}
+      
       {/* Hero Text */}
       <div className="absolute  top-1/2 left-6 md:left-12 transform -translate-y-1/2 max-w-md">
         <h1 className="text-4xl md:text-5xl font-bold">COX'S BAZAR</h1>
@@ -114,6 +115,8 @@ const NavBar = () => {
         <button className="w-8 h-8 bg-white text-black rounded-full">›</button>
       </div>
     </header>
+        </div>
+    
     );
 };
 
