@@ -1,10 +1,11 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-.home{
+.header{
   background-image: url("/src/assets/icons/Rectangle\ 1.png");
-  backface-visibility: var(--color-orange-500);
+
   background-repeat: no-repeat;
+   
 }
 .active{
   background-color:coral;

@@ -1,11 +1,16 @@
 import NavBar from "./NavBar";
 const Home = () => {
     return (
-        <div className="home opacity-95 h-screen bg-center   bg-cover">
-           <header className=" px-30 md:backdrop-blur-xl">
+       <div className="border-l-neutral-700">
+          <div className=" h-screen bg-center   bg-cover">
+           <header className="">
               <NavBar></NavBar>
            </header>
+           <main>
+             
+           </main>
         </div>
+       </div>
     );
 };
 
