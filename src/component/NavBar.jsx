@@ -3,6 +3,10 @@ import navimg from '../assets/icons/logo.png'
 import { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import Slider from 'react-slick';
+import DescriptionCard from './DescriptionCard';
+import img1 from '../assets/icons/Rectangle 1.png'
+import img2 from '../assets/icons/Sreemongol.png'
+import img3 from '../assets/icons/sundorbon.png'
 const NavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const links = [
@@ -35,15 +39,15 @@ const NavBar = () => {
   const card = [
     {
       title: 'Cox’s  Bazar',
-      image: '../assets/icons/Rectangle 1.png'
+      image:  img1
     },
     {
       title: 'Sreemangal',
-      image: '../assets/icons/Rectangle 26.png'
+      image: img2
     },
     {
       title: 'Sundarbans',
-      image: '../assets/icons/Rectangle 27.png'
+      image: img3
     },
   ]
 
@@ -97,11 +101,8 @@ const NavBar = () => {
       <header
         className="relative  opacity-70 bg-black h-screen bg-cover bg-center text-white bg-opacity-0"
 
-      >
-        {/* Navbar */}
-
-        {/* Hero Text */}
-        <div className="absolute  top-1/2 left-6 md:left-12 transform -translate-y-1/2 max-w-md">
+      ><div>
+         <div className="absolute  top-1/2 left-6 md:left-12 transform -translate-y-1/2 max-w-md">
           <h1 className="text-4xl md:text-5xl font-bold">COX'S BAZAR</h1>
           <p className="my-4 text-sm md:text-base">
             Cox's Bazar is a city, fishing port, tourism centre and district headquarters in southeastern Bangladesh.
@@ -110,8 +111,15 @@ const NavBar = () => {
         </div>
 
         {/* Destination Cards */}
-
+          <div className='flex absolute  top-1/2 left-6 md:left-12 transform -translate-y-1/2 max-w-md'>
+              {
+                card.map(data=><DescriptionCard data={data}></DescriptionCard>)
+              }
+              
+          </div>
+      </div>
       </header>
+      
     </div>
 
   );
