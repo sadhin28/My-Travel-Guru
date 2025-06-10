@@ -110,9 +110,9 @@ const NavBar = () => {
           </p>
           <button className="bg-yellow-400 btn text-black px-5 py-2 rounded font-semibold">Booking →</button>
         </div>
-          <div className='flex gap-5 md:relative top-40'>
+          <div className=' flex gap-5 md:relative top-40'>
               {
-                card.map(data=><DescriptionCard data={data}></DescriptionCard>)
+                card.map(data=><DescriptionCard  data={data}></DescriptionCard>)
               }
               
           </div>
