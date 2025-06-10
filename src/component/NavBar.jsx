@@ -99,19 +99,18 @@ const NavBar = () => {
         </div>
       )}
       <header
-        className="relative  opacity-70 bg-black h-screen bg-cover bg-center text-white bg-opacity-0"
+        className="relative  opacity-70  bg-black h-screen bg-cover  bg-center text-white bg-opacity-0"
 
-      ><div>
-         <div className="absolute  top-1/2 left-6 md:left-12 transform -translate-y-1/2 max-w-md">
+      >
+      <div className='grid md:grid-cols-2 md:gap-0 gap-10  items-center justify-center justify-items-center'>
+         <div className="p-10 md:relative top-40 md:w-2/3">
           <h1 className="text-4xl md:text-5xl font-bold">COX'S BAZAR</h1>
           <p className="my-4 text-sm md:text-base">
             Cox's Bazar is a city, fishing port, tourism centre and district headquarters in southeastern Bangladesh.
           </p>
           <button className="bg-yellow-400 btn text-black px-5 py-2 rounded font-semibold">Booking →</button>
         </div>
-
-        {/* Destination Cards */}
-          <div className='flex absolute  top-1/2 left-6 md:left-12 transform -translate-y-1/2 max-w-md'>
+          <div className='flex gap-5 md:relative top-40'>
               {
                 card.map(data=><DescriptionCard data={data}></DescriptionCard>)
               }
