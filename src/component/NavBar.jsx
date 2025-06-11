@@ -52,10 +52,10 @@ const NavBar = () => {
   ]
 
   return (
-    <div className='header bg-center bg-cover'>
-      <nav className="flex   items-center justify-between px-6 py-4 backdrop-blur-2xl text-black">
+    <div className=''>
+      <nav className="flex backdrop-blur-2xl text-white  items-center justify-between px-6 py-4  ">
         {/* Logo */}
-        <div className="text-2xl font-bold flex items-center gap-2">
+        <div className="text-2xl  bg-amber-300 rounded-2xl p-3 font-bold flex items-center gap-2">
           <img src={navimg}
             className='w-20'
             alt="" />
@@ -74,7 +74,7 @@ const NavBar = () => {
           <input
             type="text"
             placeholder="Search your Destination..."
-            className="px-4 py-2 rounded text-black"
+            className="px-4 py-2 rounded text-white"
           />
           {
             links.map(link => <NavLink to={link.link}>{link.name}</NavLink>)
@@ -84,7 +84,7 @@ const NavBar = () => {
 
       {/* Mobile Nav Dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden  duration-300 backdrop-blur-3xl text- bg-opacity-90 px-6 py-4 space-y-4 text-white">
+        <div className="md:hidden backdrop-blur-3xl  duration-300 backdrop-blur-3xl text- bg-opacity-90 px-6 py-4 space-y-4 text-white">
           <input
             type="text"
             placeholder="Search your Destination..."
@@ -98,26 +98,6 @@ const NavBar = () => {
 
         </div>
       )}
-      <header
-        className="relative  opacity-70  bg-black h-screen bg-cover  bg-center text-white bg-opacity-0"
-
-      >
-      <div className='grid md:grid-cols-2 md:gap-0 gap-10  items-center justify-center justify-items-center'>
-         <div className="p-10 md:relative top-40 md:w-2/3">
-          <h1 className="text-4xl md:text-5xl font-bold">COX'S BAZAR</h1>
-          <p className="my-4 text-sm md:text-base">
-            Cox's Bazar is a city, fishing port, tourism centre and district headquarters in southeastern Bangladesh.
-          </p>
-          <button className="bg-yellow-400 btn text-black px-5 py-2 rounded font-semibold">Booking →</button>
-        </div>
-          <div className=' flex gap-5 md:relative top-40'>
-              {
-                card.map(data=><DescriptionCard  data={data}></DescriptionCard>)
-              }
-              
-          </div>
-      </div>
-      </header>
       
     </div>
 
