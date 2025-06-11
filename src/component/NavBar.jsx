@@ -74,7 +74,7 @@ const NavBar = () => {
           <input
             type="text"
             placeholder="Search your Destination..."
-            className="px-4 py-2 rounded text-white"
+            className="w-full px-4 py-2 rounded text-white border"
           />
           {
             links.map(link => <NavLink to={link.link}>{link.name}</NavLink>)
@@ -84,7 +84,7 @@ const NavBar = () => {
 
       {/* Mobile Nav Dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden backdrop-blur-3xl  duration-300 backdrop-blur-3xl text- bg-opacity-90 px-6 py-4 space-y-4 text-white">
+        <div className="md:hidden  duration-300 backdrop-blur-3xl text- bg-opacity-90 px-6 py-4 space-y-4 text-white">
           <input
             type="text"
             placeholder="Search your Destination..."
